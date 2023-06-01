@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <style>
-       ul{
+  body{
+    background-image:url(./img/taner.jpg);
+    background-size: auto;
+  } 
+   ul{
     display: flex;
     justify-content: center;
   }
@@ -17,7 +21,9 @@
     list-style: none;
     margin-left: 20px;
   }
-
+  .navbar .nav-link.active{
+       color: #31de79;
+  }
   .nav-item> .nav-link::after {
     content:'';
     height: 2px;
@@ -31,25 +37,84 @@
     transition: 0.2s linear;
     width:100%   
     }
+   h5{
+      font-family:'Montserrat', sans-serif ;
+      color: #31de79;
+      font-stretch:extra-expanded;
+    }
+    h1 {
+      font-weight: 400;
+    }
 
+
+    .full-height {
+        min-height:100vh;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }  
+
+    h2,h4{
+      font-weight: 300;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .bg-base {
+      background-color:whitesmoke;
+
+    }
+
+    h6{
+      font-weight: 400;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-weight: 700;
+      
+    }    
+    .btn-brand {
+      color: white;
+      background-color:#31de79;
+      border-radius: 35px;
+    }
+
+    .btn-brand:hover,.btn-brand:focus {
+      background-color: rgb(56, 195, 128);
+    } 
+
+    .text-body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .shadow-effect {
+      transition: all 0.5s;
+    }
+
+    .shadow-effect:hover {
+      box-shadow: -6px 6px 0 0 #31de79 ;
+    }
 </style>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
+    <div class="collapse navbar-collapse fixed-top " id="navbarNavDropdown">
+    <a class="navbar-brand " href="#" style="padding-left: 2%;">PORTFOLIO</a>
     <a class="navbar-brand" href="#">
     <img src="./img/img.jpg" alt="Portfolio" width="168" height="60"></a>
     <a class="navbar-brand" href="#">
       <img src="./img/grn.png" alt="Portfolio" width="50" height="50"></a>  
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto mb-lg-0">
+     </button>
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#"><strong>ABOUT</strong> </a>
+          <a href="#about" class="nav-link " href="#"><strong>ABOUT</strong> </a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#"><strong>SKILLS</strong></a>
@@ -64,15 +129,70 @@
           <a class="nav-link active " aria-current="page" href="#">
             <img src="./img/linkedin.png" alt="linkedin Id" width="30" height="24">            
           </a>   -->
-          <ul class="dropdown-menu">
+<!--           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
-</nav>  
+</nav>
+<div id="content-wrapper ">
+      <section id="home" class="full-height">
+        <div class="container">
+            <div class="column-gap-0">
+              <div class="col-lg-11 text-right ">
+                   <h5>WELCOME TO MY PORTFOLIO </h5>
+                   <h2 style="color:white;">Bonjour!</h2>
+                   <h1 style="color:white;">This is <strong>Shreya sinha</strong></h1>
+                   <h6 style="color:white;">A Sever monk captivated towards development</h6>
+                   <a href="#about" class="btn btn-brand">About me</a>
+              </div>
+            </div>
+        </div>        
+      </section>
+    </div>
+      
+      <section id="about" class="full-height px-lg-5">
+        <div class="container">
+
+          <div class="row pb-4">
+          <div class="col-lg-8">
+            <h1 style="color: #31de79;">ABOUT ME</h1>
+            <h4 style="color:white;">Basic Information</h4>
+          </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-4">
+              <div class="About p-4 bg-base rounded-4 shadow-effect" >
+                <i> <img src="./img/grn.png" alt="leaf" width="20" height="20"></i>
+                <h4 >Institution</h4>
+                <p>A Mechanical Engineering undergraduate student at Indian Institute of Technology-(BHU) persuing a Bachelor of Technology in first year.</p>
+              </div> 
+            </div>
+
+            <div class="col-md-4">
+              <div class="About p-4 bg-base rounded-4 shadow-effect" >
+                <i> <img src="./img/grn.png" alt="leaf" width="20" height="20"></i>
+                <h4 >Interests</h4>
+                <p>I'm Interested in exploring different software fields, and currently exploring web development and different frameworks.</p>
+              </div>
+            </div> 
+              
+            <div class="col-md-4">
+              <div class="About p-4 bg-base rounded-4 shadow-effect" >
+                <i> <img src="./img/grn.png" alt="leaf" width="20" height="20"></i>
+                <h4 >Hobbies</h4>
+                <p>Apart from coding, I have a keen interest in making realsitic sketches , portraits and writing poems related to my memories.</p>
+              </div> 
+            </div> 
+
+         </div>
+        </div> 
+      </section>
+  
 </body>
 </html>
