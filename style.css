@@ -1,0 +1,138 @@
+body{
+    background-image:url(./taner.jpg);
+    background-size: auto;
+  } 
+  ul{
+    display: flex;
+    justify-content: center;
+  }
+  li{
+    list-style: none;
+    margin-left: 20px;
+  }
+  .navbar .nav-link.active{
+       color: #31de79;
+  }
+  .nav-item> .nav-link::after {
+    content:'';
+    height: 2px;
+    width: 0; 
+    background-color: #31de79 !important ;
+    margin: auto;
+    display: block;
+  }
+  .nav-item> .nav-link:hover::after {
+    transition: 0.2s linear;
+    width:100%   
+  }
+  h5{
+     font-family:'Montserrat', sans-serif ;
+     color: #31de79;
+     font-stretch:extra-expanded;
+  }
+  h1 {
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+  }
+  .full-height {
+      min-height:100vh;
+      height:100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+  }  
+  h2,h4{
+      font-weight: 300;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .bg-base {
+      background-color:whitesmoke;
+  }
+  h6{
+      font-weight: 400;
+  }
+  .btn {
+      padding: 12px 24px;
+      font-weight: 700;
+  }    
+  .btn-brand {
+      color: white;
+      background-color:#31de79;
+      border-radius: 35px;
+  }
+
+  .btn-brand:hover,.btn-brand:focus {
+      background-color: rgb(56, 195, 128);
+  } 
+  .text-body {
+      font-family: 'Montserrat', sans-serif;
+  }
+  .shadow-effect {
+      transition: all 0.5s;
+  }
+
+  .shadow-effect:hover {
+      box-shadow: -6px 6px 0 0 #ffffff ;
+      transform: translateY(-10px);
+      background: linear-gradient(rgba(255, 255, 255, 1),#07d15b);
+      
+  }
+  .social-icons {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .social-icons img:hover{
+      transform: translateY(-7px);
+  }
+  .icon img:hover{
+      transform: translateY(-7px)
+  }
+  .bases img:hover {
+      transform: translateY(-7px);
+  }
+
+  form{
+    background: #ffffff;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px ;
+  }
+  form h4 {
+    padding-top: 20px;
+    padding-left: 40PX;
+    font-weight: 600;
+    font-family:'Montserrat', sans-serif;
+  }
+  form input, form textarea{
+    background-color: rgb(174, 172, 172);
+    padding-left: 10px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 30px;
+    padding: 20px;
+    background: #f5f5f5;
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif;
+  }
+
+  form button {
+    background: #31de79;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px 200px;
+    border-radius: 30px;
+  }
+  
+  form button:hover , form button:focus {
+    background-color: rgb(56, 195, 128);
+    color: black;
+  }
