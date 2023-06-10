@@ -8,100 +8,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<style>
-  body{
-    background-image:url(./taner.jpg);
-    background-size: auto;
-  } 
-  ul{
-    display: flex;
-    justify-content: center;
-  }
-  li{
-    list-style: none;
-    margin-left: 20px;
-  }
-  .navbar .nav-link.active{
-       color: #31de79;
-  }
-  .nav-item> .nav-link::after {
-    content:'';
-    height: 2px;
-    width: 0; 
-    background-color: #31de79 !important ;
-    margin: auto;
-    display: block;
-  }
-  .nav-item> .nav-link:hover::after {
-    transition: 0.2s linear;
-    width:100%   
-  }
-  h5{
-     font-family:'Montserrat', sans-serif ;
-     color: #31de79;
-     font-stretch:extra-expanded;
-  }
-  h1 {
-      font-weight: 400;
-      font-family: 'Montserrat', sans-serif;
-  }
-  .full-height {
-      min-height:100vh;
-      height:100%;
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-  }  
-  h2,h4{
-      font-weight: 300;
-      font-family: 'Montserrat', sans-serif;
-  }
-
-  .bg-base {
-      background-color:whitesmoke;
-  }
-  h6{
-      font-weight: 400;
-  }
-  .btn {
-      padding: 12px 24px;
-      font-weight: 700;
-  }    
-  .btn-brand {
-      color: white;
-      background-color:#31de79;
-      border-radius: 35px;
-  }
-
-  .btn-brand:hover,.btn-brand:focus {
-      background-color: rgb(56, 195, 128);
-  } 
-  .text-body {
-      font-family: 'Montserrat', sans-serif;
-  }
-  .shadow-effect {
-      transition: all 0.5s;
-  }
-
-  .shadow-effect:hover {
-      box-shadow: -6px 6px 0 0 #31de79 ;
-  }
-  .social-icons {
-    display: inline-block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .social-icons img:hover{
-      transform: translateY(-7px);
-  }
-  .icon img:hover{
-      transform: translateY(-7px)
-  }
-  .bases img:hover {
-      transform: translateY(-7px);
-  }
-</style>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
@@ -239,8 +148,17 @@
               </div>            
             </div>
           </div>
+            <form onsubmit="sendEmail(); reset(); return false;">
+            <h4 style="color:#31de79;">GET IN TOUCH</h4>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your Email Id" required>
+            <input type="text" id="phone" placeholder="Enter your mobile number" required>
+            <textarea id="message" rows="4" placeholder="Wanna ask something?"></textarea>
+            <button type="submit" class="btn btn-brand">Send</button>
+          </form>
         </div>
       </section>  
   
 </body>
+<script> src="https://smtpjs.com/v3/smtp.js"</script>
 </html>
