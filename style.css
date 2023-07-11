@@ -30,6 +30,9 @@ body{
      color: #31de79;
      font-stretch:extra-expanded;
   }
+  .collapse{
+    background-color:rgb(29, 52, 52);
+  }
   h1 {
       font-weight: 400;
       font-family: 'Montserrat', sans-serif;
