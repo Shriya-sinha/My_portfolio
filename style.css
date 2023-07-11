@@ -31,7 +31,7 @@ body{
      font-stretch:extra-expanded;
   }
   .collapse{
-    background-color:rgb(29, 52, 52);
+    background-color:rgb(29, 52, 52)!important;
   }
   h1 {
       font-weight: 400;
