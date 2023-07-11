@@ -22,7 +22,7 @@ body{
     display: block;
   }
   .nav-item> .nav-link:hover::after {
-    transition: 0.2s linear;
+    transition: 0.4s linear;
     width:100%   
   }
   h5{
@@ -135,4 +135,169 @@ body{
   form button:hover , form button:focus {
     background-color: rgb(56, 195, 128);
     color: black;
+  }
+
+  .g-col-12,h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    
+  }
+
+  .leaf1{
+    position: fixed;
+    top:0px;
+    right:50px;
+    animation: fall 3s ease-in 0s infinite normal;
+  }
+
+   @keyframes fall {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(740px);
+    }
+  }
+   .leaf2{
+    position: fixed;
+    top:0px;
+    right:150px;
+    animation: fall 4.5s ease-in 3.3s infinite normal;
+  }
+
+  .leaf2s{
+    position: fixed;
+    top:0px;
+    right:250px;
+    animation:fall 4s ease-in 1.6s infinite normal;
+  }
+
+  .leaf1s{
+    position: fixed;
+    top:0px;
+    right:100px;
+    animation:fall 4.2s ease-in 1.6s infinite normal;
+  }
+
+  .leaf2ss{
+    position: fixed;
+    top:0px;
+    right:200px;
+    animation:fall 5s ease-in 1.3s infinite normal;
+  }
+  
+  @keyframes slideright {
+    from{
+      margin-right:20%
+    }
+    to{
+      margin-right:0%
+    }
+  }
+  
+  @keyframes op {
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
+
+  .star1{
+    position:absolute;
+    top:200px;
+    right:300px;
+    height:5px;
+    width:5px;
+    border-radius: 50%;
+    background-color:white;
+    animation:blink 5s ease-in infinite;
+  }
+  .star2{
+    position:absolute;
+    top:500px;
+    right:500px;
+    height:3px;
+    width:3px;
+    border-radius: 50%;
+    background-color: white;
+    animation:blink 5s ease-in 0.3s infinite;
+  }
+     
+  .star3{
+    position:absolute;
+    top:155px;
+    right:800px;
+    height:5px;
+    width:5px;
+    border-radius: 50%;
+    background-color: white;
+    animation:blink 5s ease-in  infinite;
+    animation-delay: 0.2s;
+  }   
+  .star4{
+    position:absolute;
+    top:350px;
+    right:1180px;
+    height:2.5px;
+    width:2.5px;
+    border-radius: 50%;
+    background-color: white;
+    animation:blink 5s ease-in 0.7s infinite;
+  }   
+  .star5{
+    position:absolute;
+    top:500px;
+    right:1400px;
+    height:4px;
+    width:4px;
+    border-radius: 50%;
+    background-color: white;
+    animation:blink 5s ease-in 0.5 infinite;
+  }     
+  .star6{
+    position:absolute;
+    top:700px;
+    right:900px;
+    height:4px;
+    width:4px;
+    border-radius: 50%;
+    background-color: white;
+    animation:blink 5s ease-in 0.5s infinite;
+  }  
+  .Me{
+    padding:10px;
+    padding-right:0px;
+    color:white;
+  }
+
+  .dvp{
+    position:relative;
+    color:#0e3742;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height:0.70em;
+    outline:none;
+    animation:blink 1s linear infinite ;
+  }
+
+  @keyframes blink {
+    from{
+      color:#0e3742 ;
+      box-shadow: none;
+    }
+    to{
+      color:#fff;
+      box-shadow: 0 0 10px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff,
+      0 0 80px #ffffff,
+      0 0 160px #ffffff;
+    }
+  }
+  .info{
+    animation: 
+    slideright 2s ease-in ,
+    op 2s ease-in ;
   }
